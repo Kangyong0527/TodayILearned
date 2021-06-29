@@ -1,15 +1,15 @@
 # TodayILearned
 ## 2021.06.28 JS/Node
 + Array의 기본 Method
-  + 1.[Array.length](1.-Array.length)
-  + 2.[Array.indexOf](2.-Array.indexOf)
-  + 3.[Array.includes](3.-Array.includes)
-  + 4.[Array.push](4.-Arry.push)
-  + 5.[Array.pop](5.-Array.pop)
-  + 6.[Array.shift](6.-Array.shift)
-  + 7.[Array.unshift](7.-Array.unshift)
-  + 8.[Array.slice](8.-Array.slice)
-  + 9.[Array.splice](9.-Array.splice)
+  + 1.[Array.length](1.Array.length)
+  + 2.[Array.indexOf](2.Array.indexOf)
+  + 3.[Array.includes](3.Array.includes)
+  + 4.[Array.push](4.Arry.push)
+  + 5.[Array.pop](5.Array.pop)
+  + 6.[Array.shift](6.Array.shift)
+  + 7.[Array.unshift](7.Array.unshift)
+  + 8.[Array.slice](8.Array.slice)
+  + 9.[Array.splice](9.Array.splice)
   ***
   
   1.Array.length
