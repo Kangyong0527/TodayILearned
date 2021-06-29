@@ -12,7 +12,7 @@
   + 9.[Array.splice](9.-Array.splice)
   ***
   
-  1. Array.length
+  1.Array.length
   
     ```javascript
     const food = ['떡복이','치킨','피자'];
@@ -20,7 +20,7 @@
     // arrray food 안에 배열의 수가 몇인지 보여주는 메소드 이다. 0부터 시작해 올라간다.
     ```
   
-  2. Array.indexOf
+  2.Array.indexOf
   
   ```javascript
     const food = ['떡복이','치킨','피자'];
@@ -44,7 +44,7 @@
     // spinach 은 이미 veggies 컬렉션에 존재합니다.
     ```
   
-  3. Array.includes
+  3.Array.includes
     
     ```javascript
    // includes() 메서드는 배열이 특정 요소를 포함하고 있는지 판별합니다.
@@ -56,7 +56,7 @@
     [1, 2, NaN].includes(NaN); // true
     ```
   
-  4. Array.push
+  4.Array.push
     
     ```javascript
     //push() 메서드는 배열의 끝에 하나 이상의 요소를 추가하고, 배열의 새로운 길이를 반환합니다.
@@ -79,7 +79,7 @@
     console.log(vegetables); // ['설탕당근', '감자', '셀러리', '홍당무']
     ```
   
-  5. Array.pop
+  5.Array.pop
   
   ```javascript
   //pop() 메서드는 배열에서 마지막 요소를 제거하고 그 요소를 반환합니다.
@@ -91,7 +91,7 @@
     console.log(popped); // 'sturgeon']
     ```
   
-  6. Array.shift
+  6.Array.shift
  
   ```javascript
   //shift() 메서드는 배열에서 첫 번째 요소를 제거하고, 제거된 요소를 반환합니다. 이 메서드는 배열의 길이를 변하게 합니다.
@@ -104,7 +104,7 @@
   // expected output: 1
   ```
   
-  7. Array.unshift
+  7.Array.unshift
   
   ```javascript
   //unshift() 메서드는 새로운 요소를 배열의 맨 앞쪽에 추가하고, 새로운 길이를 반환합니다.
@@ -116,7 +116,7 @@
   // expected output: Array [4, 5, 1, 2, 3]
   ```
 
-  8. Array.slice
+  8.Array.slice
 
   ```javascript
   // slice() 메서드는 어떤 배열의 begin부터 end까지(end 미포함)에 대한 얕은 복사본을 새로운 배열 객체로 반환합니다. **원본 배열은 바뀌지 않습니다**.
@@ -150,7 +150,7 @@
     음수 인덱스는 배열의 끝에서부터의 길이를 나타냅니다. 예를들어 slice(2,-1) 는 세번째부터 끝에서 두번째 요소까지 추출합니다
     ```
 
-  9. Array.splice 
+  9.Array.splice 
   ```javascript
   //splice() 메서드는 배열의 기존 요소를 삭제 또는 교체하거나 새 요소를 추가하여 배열의 내용을 변경합니다.
   //array.splice(start[, deleteCount[, item1[, item2[, ...]]]])  
