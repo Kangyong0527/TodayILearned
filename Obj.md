@@ -46,4 +46,58 @@ let order1 = courseMenu(courseA,'main')
 ```
 이렇게 함수로서 객체가 여러개 이고 키값또한 변수로서 들어갈때 객체[변수값] 이렇게 사용하개 된다.
 이렇게 브라캣 노태이션은 변수값을 사용해야 할때 쓸 수 있다.
-이외 예시들을 보며 학습하도록 하자
+## delete
+
+delete 연산자는 객체의 속성을 제거합니다.
+```javascript
+delete object.property
+delete object['property']
+```
+이렇게 delete 연산자를 앞에 쓰고 객체 그리고 삭재하고자 하는 카를 써주면 삭제가 된다.
+
+## for..in
+
+for...in문은 상속된 열거 가능한 속성들을 포함하여 객체에서 문자열로 키가 지정된 모든 열거 가능한 속성에 대해 반복합니다. 
+```javascript
+var obj = {a: 1, b: 2, c: 3};
+for (const prop in obj) {
+  console.log(`obj.${prop} = ${obj[prop]}`);
+}
+// Output:
+// "obj.a = 1"
+// "obj.b = 2"
+// "obj.c = 3"
+```
+예시를 보면 prop은 obj의 키값이다. for문으로 반복하며 키값을 하나씩 꺼내온다.
+그라고 obj[prop]은 키값의 value 이다. 이것또한 반복하며 하나씩 꺼내온다.
+이런식으로 우리가 만든 cours메뉴를 사용해 보면 이렇다
+```javascript
+let courseA = {
+    Appetizer: 'wine',
+    main: 'steak',
+    dessert: 'chocolet'
+}
+let result2 = '';
+function coursWhat(courseA){
+    for (const property in courseA) {
+ result2 = result2 + property + ': ' + courseA[property] + '\n'
+}
+return result2
+}
+
+coursWhat(courseA); //Appetizer: 'wine' main: 'steak' dessert: 'chocolet'
+```
+
+## Object.keys
+
+Object.keys()메서드는 지정된 객체의 고유 한 열거 가능한 속성 이름 배열을 반환 하며 일반 루프와 동일한 순서로 반복됩니다.
+한마디로 Object.keys는 객체의 키값만 순서대로 뽑아온다.
+```javascript
+const object1 = {
+  a: 'somestring',
+  b: 42,
+  c: false
+};
+console.log(Object.keys(object1));
+// expected output: Array ["a", "b", "c"]
+```
