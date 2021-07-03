@@ -1,7 +1,7 @@
 # TodayILearned
 ## JS/Node
-[Array](../TodayILearned,Array.md)
-[Obj](../TodayILearned,Obj.md)
+1. [Array](https://github.com/Kangyong0527/TodayILearned/blob/main/Array.md)
+2. [Obj](https://github.com/Kangyong0527/TodayILearned/blob/main/Obj.md)
 
 
 
