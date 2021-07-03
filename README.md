@@ -1,7 +1,7 @@
 # TodayILearned
 ## JS/Node
-[Array](../Array.md)
-[Obj](../Obj.md)
+[Array](../TodayILearned,Array.md)
+[Obj](../TodayILearned,Obj.md)
 
 
 
