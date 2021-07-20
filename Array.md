@@ -9,6 +9,9 @@
   + 7.[Array.unshift](7.Array.unshift)
   + 8.[Array.slice](8.Array.slice)
   + 9.[Array.splice](9.Array.splice)
+  + 10.[Array.sort](10.Array.sort)
+  + 11.[Array.find](11.Array.find)
+  + 12.[Array.values][12.Array.values]
   ***
   
   1.Array.length
@@ -166,3 +169,53 @@
 
   //array.splice(시작인덱스,제거할 갯수,추가할 인자들) 이렇게 사용한다.
   //음수가 시작인데스로 온다면 뒤에서 부터 새는 것이다.
+  ```
+
+  10.Array.sort
+  ```javascript 
+  //sort()는 배열들의 요소를 적절한(알파벳 순서 혹은 숫자의 순서) 위치에 정렬한후에 그 배열을 출력한다.
+  const months = ['March', 'Jan', 'Feb', 'Dec'];
+    months.sort();
+  console.log(months);
+  // expected output: Array ["Dec", "Feb", "Jan", "March"]
+
+  const array1 = [1, 30, 4, 21, 100000];
+    array1.sort();
+  console.log(array1);
+  // expected output: Array [1, 100000, 21, 30, 4]
+  ```
+
+  11.Array.find
+  ```javascript
+  //find()는 주어진 판별함수를 만족하는 첫번째 요소를 반환합니다.
+  // 속성중 하나를 사용하여 배열중에 객체 찾기
+  const inventory = [
+    {name: 'apples', quantity: 2},
+    {name: 'bananas', quantity: 0},
+    {name: 'cherries', quantity: 5}
+    ];
+
+  const result = inventory.find(fruit => fruit.name === 'cherries');
+
+  console.log(result) // { name: 'cherries', quantity: 5 }
+
+  // 여러가지 예시가 있으니 확인해 볼것. https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Array/find
+  ```
+  12.Array.values
+  ```javascript
+  //values는 배열의각 인덱스 값에 대한 값을 가지는 새로운 반복기 객체를 반환한다.
+  const array1 = ['a', 'b', 'c'];
+  const iterator = array1.values();
+
+  for (const value of iterator) {
+  console.log(value);
+  }
+
+  // expected output: "a"
+  // expected output: "b"
+  // expected output: "c"
+  ```
+
+  
+  
+
